@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" hred="style.css">
+  <title>Formulario Registro</title>
+  <style>
+  .body{ 
+   margin: ;
+   padding: ;
+   box-sizing: border-box ;
+  }
+  
+  body {
+    background-image: url('fondo.jpg');
+  }
+  
+
+  .form-register{
+  width:250px;
+  background: rgb(127, 156, 185);
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+  align-self: center;
+  vertical-align: center ;
+
+}
+.form-register h4{
+margin-top: -10px;
+text-align: center;
+color: black;
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.controls {
+width: 90%;
+background-color: rgb(241, 233, 241);
+padding: 10px;
+border-radius: 4px;
+margin-bottom: 16px;
+border: 1px solid #1f53c5;
+font-family: 'calibri' ;
+font-size: 18px;
+}
+.form-register p {
+ height: 10px;
+ text-align: center ;
+ font-size: 12px;
+ line-height: 20px;
+ }
+
+.form-register a {
+     color: white;
+     text-decoration: none;
+ }
+ .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: rgb(201, 90, 90);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 5px 0;
+    font-size: 16px;
+}
+.form-register .botons:hover {
+    width: 100%;
+    background: rgb(235, 64, 64);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.default {
+  margin-left: 470px;  
+  text-align: center;
+  width: 30%;
+  background:  rgb(127, 156, 185);
+}
+
+th, td {
+border: 1px solid #1f53c5;
+}
+
+
+
+  </style>
+   
+</head>
+<body>
+  <section class="Tabla">
+    <table class="default" >
+
+      <tr>
+        <th>Programa</th>
+        <th>Dirección</th>
+        <th>Número</th>
+      </tr>
+
+      <tr>
+        <td>Terrece Goberment</td>
+        <td>742 de Evergreen Terrace</td>
+        <td>764-84377</td>
+      </tr>
+    
+    </table>
+  </section>
+
+  <form class="form-register" action="https://example.com" method="post">
+    <h4>Formulario Registro</h4>
+    <input class="controls" type ="text" name="Nombre" id="Nombre" placeholder="ingrese su nombre" required  >
+    <input class="controls" type ="tel" name="Telefono" id="Telefono" placeholder="ingrese su Telefono" required pattern="[0-9]{7,10}" maxlength="10" title="The number entered must be between 7 and 10 numeric characters">
+    <input class="controls" type ="email" name="correo" id="Correo" placeholder="ingrese su correo" required>
+    <input class="controls" type ="password" name="Contraseña" id="Nombres" placeholder="ingrese su Contraseña" required minlength="8" maxlength="15" title="Password must be between 8 and 15 characters" >
+    <input type="checkbox" name="Terminos y condiciones" checked />
+    Estoy de acuerdo con <a href="#">Terminos y condiciones</a>
+    <input class="botons" type="submit" value="Registrar">    
+    <p><a href="#">¿ya tiene una cuenta?</a></p>
+  </form>
+
+  
+</body>
+</html>

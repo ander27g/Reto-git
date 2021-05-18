@@ -5,7 +5,7 @@ Commands CSS
 
 * box-sizing : property allows us to include the padding and border in an element's total width and height.
 * box-shadow: Add shadows to different <div> elements.
-* text-decorations: Set different text decorations for <h1>, <h2>, and <h3> elements.
+* text-decorations: Set different text decorations for h1, h2, and h3 elements.
   
  Commands and attributes Html
 
